@@ -11,14 +11,13 @@ import CreateAccount from './Components/CreateAccount/CreateAccount';
 function App() {
   return (
     <div>
-      
+
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
-         <Route path="/apartmentDetails" component={ApartmentDetails} />
+          <Route path="/apartmentDetails" component={ApartmentDetails} />
           <Route path="/bookingList" component={BookingList} />
-          <Route path="/createAccount" component={CreateAccount} />
           <Route path="/myRent" component={MyRent} />
           <Route path="/rentHouse" component={RentHouse} />
         </Switch>
