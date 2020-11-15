@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+.custom-input {
+    border: none;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    outline: none;
+    height: 40px;
+    width: 100%;
+}
+
+.custom-input:focus {
+    border-bottom: 2px solid #275A53;
+}
+
+.custom-input::placeholder {
+    font-weight: 600;
+    color: rgb(124, 123, 123);
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    background: #275A53;
+    border: none;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #23504a;
+    color: #cacaca;
+}
+
+.login-form {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.login-option, .login-form {
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 30px 40px;
+}
+
+@media screen and (max-width: 620px) {
+    .login-option, .login-form {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width:621px) {
+    .login-option, .login-form {
+        max-width: 70%;
+    }
+}
+
+.fancy-line {
+    width: 570px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 432px;
+    height: 22px;
+}
+
+.login-button {
+    width: 100%;
+    display: flex;
+    border: 1px solid #C7C7C7;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 57px;
+}
+
+.login-button:hover {
+    border-color: #275A53;
+}
+
+.facebook-login, .google-login {
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin: auto;
+}
+
+.facebook-login:focus, .google-login:focus {
+    outline: none
+}
+
+.facebook, .google {
+    height: 38px;
+    margin: 5px;
+}
+
+.line {
+    background: #C7C7C7;
+    width: 200px;
+    height: 1px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.toggle-btn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #275A53;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
