@@ -1,9 +1,12 @@
 import React from 'react';
+import AvailableHouses from '../AvailableHouses/AvailableHouses';
+import MainHeader from '../MainHeader/MainHeader';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is home</h2>
+           <MainHeader></MainHeader>
+           <AvailableHouses></AvailableHouses>
         </div>
     );
 };
