@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import {  Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './NavigationBar.css';
 const NavigationBar = () => {
     return (
       <div>
@@ -16,16 +16,28 @@ const NavigationBar = () => {
                 />
               </Link>
             </Navbar.Brand>
-            <Nav className="ml-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">About</Nav.Link>
-              <Nav.Link href="#pricing">Service</Nav.Link>
-              <Nav.Link href="#pricing">Concerns</Nav.Link>
-              <Nav.Link href="#pricing">Event</Nav.Link>
-              <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav className="ml-auto ">
+              <Nav.Link className="navColor" href="#home">
+                Home
+              </Nav.Link>
+              <Nav.Link className="navColor" href="#features">
+                About
+              </Nav.Link>
+              <Nav.Link className="navColor" href="#pricing">
+                Service
+              </Nav.Link>
+              <Nav.Link className="navColor" href="#pricing">
+                Concerns
+              </Nav.Link>
+              <Nav.Link className="navColor" href="#pricing">
+                Event
+              </Nav.Link>
+              <Nav.Link className="navColor" href="#pricing">
+                Contact
+              </Nav.Link>
             </Nav>
 
-            <Button variant="outline-primary">Login</Button>
+            <button className="loginBtn">Login</button>
           </Navbar>
         </Container>
       </div>

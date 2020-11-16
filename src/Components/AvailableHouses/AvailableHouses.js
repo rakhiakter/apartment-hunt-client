@@ -9,7 +9,7 @@ const AvailableHouses = () => {
         <h2 className="available2">
           Discover the latest Rent <br /> available today{" "}
         </h2>
-        <Row>
+        <Row className="cardImg">
           <CardDeck>
             <Card>
               <Card.Img
@@ -18,10 +18,11 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Washington Avenue</Card.Title>
+                <Card.Title className="avenue">Washington Avenue</Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -32,32 +33,34 @@ const AvailableHouses = () => {
                   </p>
                   <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$194</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -70,11 +73,14 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Family Apartment Three</Card.Title>
+                <Card.Title className="avenue">
+                  Family Apartment Three
+                </Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     {" "}
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -83,34 +89,36 @@ const AvailableHouses = () => {
                     />{" "}
                     Nasirabad H/S, Chattogram
                   </p>
-                  <Row> 
+                  <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$356</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -123,11 +131,12 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Gorgeous house</Card.Title>
+                <Card.Title className="avenue">Gorgeous house</Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     {" "}
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -138,32 +147,34 @@ const AvailableHouses = () => {
                   </p>
                   <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$256</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -180,11 +191,12 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Luxury villa</Card.Title>
+                <Card.Title className="avenue">Luxury villa</Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     {" "}
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -195,32 +207,34 @@ const AvailableHouses = () => {
                   </p>
                   <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$345</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -233,11 +247,12 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Epic Huda Palacio</Card.Title>
+                <Card.Title className="avenue">Epic Huda Palacio</Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     {" "}
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -248,32 +263,34 @@ const AvailableHouses = () => {
                   </p>
                   <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$536</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -286,11 +303,12 @@ const AvailableHouses = () => {
                 alt=""
               />
               <Card.Body>
-                <Card.Title>Washington Avenue</Card.Title>
+                <Card.Title className="avenue">Washington Avenue</Card.Title>
                 <Card.Text>
-                  <p>
+                  <p className="address">
                     {" "}
                     <img
+                      className="map"
                       src={
                         require("../../logos/map-marker-alt-solid 1.png")
                           .default
@@ -301,32 +319,34 @@ const AvailableHouses = () => {
                   </p>
                   <Row>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bed 1.png").default}
                           alt=""
                         />{" "}
-                        3 bedrooms
+                        3 Bedrooms
                       </p>
                     </Col>
                     <Col sm={6}>
-                      <p>
+                      <p className="address">
                         {" "}
                         <img
+                          className="map"
                           src={require("../../logos/bath 1.png").default}
                           alt=""
                         />{" "}
-                        2 bathrooms
+                        2 Bathrooms
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col sm={6}>
-                      <h3>$194</h3>
+                      <h3 className="amount">$283</h3>
                     </Col>
                     <Col sm={6}>
-                      <button>View Details</button>
+                      <button className="view">View Details</button>
                     </Col>
                   </Row>
                 </Card.Text>

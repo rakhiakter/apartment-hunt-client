@@ -6,15 +6,28 @@ const SearchBar = () => {
     console.log({rectangle13});
     return (
       <Container>
-        <div 
+        <div
+          className="bgColor"
           style={{
             backgroundImage: `url("${rectangle13}")`,
             height: "400px",
-            backgroundSize: "cover"
-            
+            backgroundSize: "cover",
+          
           }}
         >
           <h1 className="find">Find Your House Rent</h1>
+
+          <form class="form-inline searchIn">
+            <input
+              class="form-control search2 "
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="searchBtn" type="submit">
+              Find Now
+            </button>
+          </form>
         </div>
       </Container>
     );

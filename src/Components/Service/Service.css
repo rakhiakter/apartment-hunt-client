@@ -1,11 +1,22 @@
 .service1 {
     text-align: center;
     margin-top: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.0015em;
+    color: #275A53;
 }
 
 .service2 {
     text-align: center;
     margin-top: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: #16322E;
 }
 
 .img1 {

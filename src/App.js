@@ -8,6 +8,7 @@ import MyRent from './Components/MyRent/MyRent';
 import RentHouse from './Components/RentHouse/RentHouse';
 import ApartmentDetails from './Components/ApartmentDetails/ApartmentDetails';
 import CreateAccount from './Components/CreateAccount/CreateAccount';
+
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/bookingList" component={BookingList} />
           <Route path="/myRent" component={MyRent} />
           <Route path="/rentHouse" component={RentHouse} />
+          <Route path="/createAccount" component={CreateAccount} />
         </Switch>
       </Router>
     </div>
