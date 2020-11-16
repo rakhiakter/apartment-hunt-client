@@ -6,7 +6,7 @@ const Footer = () => {
       <Container className="footer">
         <Row>
           <Col className="footerCol" md={3}>
-            {" "}
+            <h5 className="company">Location</h5>
             <div>
               <ul className="about">
                 H#340 (4th Floor), Road #24, New DOHS, Mohakhali, Dhaka,
