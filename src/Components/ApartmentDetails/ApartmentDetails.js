@@ -1,11 +1,11 @@
 import React from 'react';
 import './ApartmentDetails.css';
-import heroImg from '../../Images/hero/product_details_hero.png';
-import featuredImg from '../../Images/preview/Rectangle 406.png';
-import thumbnailImgOne from '../../Images/thumbnail/Rectangle 407.png';
-import thumbnailImgTwo from '../../Images/thumbnail/Rectangle 408.png';
-import thumbnailImgThree from '../../Images/thumbnail/Rectangle 409.png';
-import thumbnailImgFour from '../../Images/thumbnail/Rectangle 410.png';
+import heroImg from '../../images/hero/product_details_hero.png';
+import featuredImg from '../../images/rectangle 406.png';
+import thumbnailImgOne from '../../images/rectangle 407.png';
+import thumbnailImgTwo from '../../images/rectangle 408.png';
+import thumbnailImgThree from '../../images/rectangle 409.png';
+import thumbnailImgFour from '../../images/rectangle 410.png';
 
 const ApartmentDetails = () => {
     return (
