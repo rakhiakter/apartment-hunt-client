@@ -1,0 +1,23 @@
+/* 
+* {
+    border: aqua 1px solid;
+} */
+
+.hero-img-height {
+    height: 377px;
+    width: 100%;
+    background-size: cover;
+}
+
+.hero-text {
+    color:#fff;
+    position: absolute;
+    left: 600px;
+    top: 15%;
+    font-size: 70px;
+}
+
+.img-thumbnail-size {
+    width: 190px;
+    height: 111px;
+}
