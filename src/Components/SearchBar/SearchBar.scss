@@ -1,8 +1,9 @@
+@import "../../App.scss";
 .find {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-style: normal;
+    text-align: $text-position;
+    color:$color-two;
+    font-family: $font-family2;
+    font-style: $style-of-font;
     font-weight: bold;
     font-size: 48px;
     padding-top: 50px;
@@ -22,20 +23,20 @@
     margin-left: 40px;
     width: 150px;
     height: 40px;
-    background: #275A53;
+    background: $color-one;
     border-radius: 5px;
-    font-family: Avenir;
-    font-style: normal;
+    font-family: $font-family3;
+    font-style: $style-of-font;
     font-weight: 500;
     font-size: 16px;
     border: none;
-    text-align: center;
-    color: #FFFFFF;
+    text-align: $text-position;
+    color: $color-two;
 }
 
 .search2 {
     width: 150px;
     height: 70px;
-    background: #F1F6F4;
+    background: $color-four;
     border-radius: 5px;
 }

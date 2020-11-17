@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './AvailableHouse.css';
+import './AvailableHouse.scss';
 const AvailableHouses = () => {
     return (
       <Container>

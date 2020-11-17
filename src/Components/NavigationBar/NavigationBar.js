@@ -1,7 +1,7 @@
 import React from 'react';
 import {  Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './NavigationBar.css';
+import './NavigationBar.scss';
 const NavigationBar = () => {
     return (
       <div>

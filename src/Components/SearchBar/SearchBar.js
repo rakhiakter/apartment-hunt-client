@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import rectangle13 from "../../images/rectangle 13.png";
-import './SearchBar.css';
+import './SearchBar.scss';
 const SearchBar = () => {
     console.log({rectangle13});
     return (

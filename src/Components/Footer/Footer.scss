@@ -1,6 +1,7 @@
+@import "../../App.scss";
 .footer {
     margin-top: 60px;
-    background-color: #275A53;
+    background-color: $color-one;
     height: 300px;
 }
 
@@ -30,24 +31,24 @@ li {
 }
 
 .company {
-    font-family: Poppins;
-    font-style: normal;
+    font-family: $font-family;
+    font-style: $style-of-font;
     font-weight: 600;
     font-size: 20px;
     line-height: 34px;
-    color: #FFFFFF;
+    color:$color-two;
     margin-left: 100px;
 }
 
 .about {
-    font-family: Poppins;
-    font-style: normal;
+    font-family: $font-family;
+    font-style: $style-of-font;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color:$color-two;
 }
 
 ul.about {
-    color: #FFFFFF;
+    color:$color-two;
 }
