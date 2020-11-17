@@ -123,7 +123,6 @@ const AvailableHouses = () => {
                     </Col>
                     <Col sm={6}>
                       <Link to="/apartmentDetails">
-                        {" "}
                         <button className="view">View Details</button>
                       </Link>
                     </Col>
@@ -182,7 +181,6 @@ const AvailableHouses = () => {
                     </Col>
                     <Col sm={6}>
                       <Link to="/apartmentDetails">
-                        {" "}
                         <button className="view">View Details</button>
                       </Link>
                     </Col>
@@ -245,7 +243,6 @@ const AvailableHouses = () => {
                     </Col>
                     <Col sm={6}>
                       <Link to="/apartmentDetails">
-                        {" "}
                         <button className="view">View Details</button>
                       </Link>
                     </Col>
@@ -304,7 +301,6 @@ const AvailableHouses = () => {
                     </Col>
                     <Col sm={6}>
                       <Link to="/apartmentDetails">
-                        {" "}
                         <button className="view">View Details</button>
                       </Link>
                     </Col>
@@ -363,7 +359,6 @@ const AvailableHouses = () => {
                     </Col>
                     <Col sm={6}>
                       <Link to="/apartmentDetails">
-                        {" "}
                         <button className="view">View Details</button>
                       </Link>
                     </Col>

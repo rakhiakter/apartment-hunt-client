@@ -38,7 +38,6 @@ const NavigationBar = () => {
             </Nav>
 
             <Link to="/login">
-              {" "}
               <button className="loginBtn">Login</button>
             </Link>
           </Navbar>
