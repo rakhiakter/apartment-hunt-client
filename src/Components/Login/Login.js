@@ -1,18 +1,69 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import './Login.css';
-import googleIcon from '../../img/icon/Group 2.png';
-import facebookIcon from '../../img/icon/Group 573.png';
+import googleIcon from '../../logos/Group 573.png';
+import facebookIcon from '../../logos/Group 2.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
+import NavigationBar from '../NavigationBar/NavigationBar';
+import { addLoggedInUser } from '../Redux/actions/addInfo';
+import { connect } from 'react-redux';
+import firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from './firebase.config';
+import { useHistory, useLocation } from 'react-router-dom';
 
 
 
 
-const Login = () => {
+const Login = (props) => {
+    console.log(props.info)
+    const { addLoggedInUser } = props;
     const [newUser, setNewUser] = useState(false);
+
+    let history = useHistory();
+    let location = useLocation();
+
+    let { from } = location.state || { from: { pathname: "/" } };
+
+    if (firebase.apps.length === 0) {
+        firebase.initializeApp(firebaseConfig);
+    }
+
+    const handleGoogleSignIn = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().signInWithPopup(provider).then(function (result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const { displayName, email } = result.user;
+            const signedInUser = { name: displayName, email };
+
+            addLoggedInUser(signedInUser)
+            history.replace(from);
+            // ...
+        }).catch(function (error) {
+            console.log(error)
+        });
+    }
+
+    const handleFBSignIn = () => {
+        const provider = new firebase.auth.FacebookAuthProvider();
+
+        firebase.auth().signInWithPopup(provider).then(function (result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const { displayName, email } = result.user;
+            const signedInUser = { name: displayName, email };
+
+            addLoggedInUser(signedInUser)
+            history.replace(from);
+            // ...
+        }).catch(function (error) {
+            console.log(error)
+        });
+    }
 
     return (
         <div>
+            <NavigationBar />
             {!newUser ? <div className="login-form">
                 <Form>
                     <h2>Login</h2>
@@ -50,17 +101,26 @@ const Login = () => {
                 <div className="login-option">
                     <div className="login-button">
                         <img src={facebookIcon} alt="facebook" className="facebook" />
-                        <button className="facebook-login">Continue with Facebook</button>
+                        <button className="facebook-login" onClick={handleFBSignIn}>Continue with Facebook</button>
                     </div>
                     <div className="login-button">
                         <img src={googleIcon} alt="google" className="google" />
-                        <button className="google-login">Continue with Google</button>
+                        <button className="google-login" onClick={handleGoogleSignIn}>Continue with Google</button>
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
 
-export default Login;
+const mapStateToProps = state => {
+    return {
+        info: state.info
+    }
+}
+
+const mapDispatchToProps = {
+    addLoggedInUser: addLoggedInUser
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

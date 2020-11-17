@@ -1,23 +1,43 @@
-/* 
-* {
-    border: aqua 1px solid;
-} */
+.apartment-details-bg {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/rectangle\ 13.png");
+    background-size: cover;
+    min-height: 45vh;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-position: bottom;
+}
 
 .hero-img-height {
     height: 377px;
     width: 100%;
-    background-size: cover;
-}
-
-.hero-text {
-    color:#fff;
-    position: absolute;
-    left: 600px;
-    top: 15%;
-    font-size: 70px;
 }
 
 .img-thumbnail-size {
-    width: 190px;
+    width: 170px;
     height: 111px;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    padding-top: 100px;
+}
+
+.details-section .btn {
+    background-color: #275A53;
+    color: white;
+}
+
+.details-section li {
+    list-style: none;
+}
+
+.details-section .price {
+    color: #275A53;
+    font-weight: 900;
+}
+
+.apartment-form {
+    background-color: #F4F4F4;
+    padding: 45px 15px 20px;
 }

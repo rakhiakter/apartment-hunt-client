@@ -1,7 +1,8 @@
 .footer {
     margin-top: 60px;
     background-color: #275A53;
-    height: 300px;
+    min-height: 350px;
+    color: white
 }
 
 .footerCol {
@@ -10,40 +11,40 @@
 
 .socialSites1 {
     height: 30px;
+    margin-bottom: 10px;
 }
 
 .socialSites2 {
     height: 30px;
+    margin-bottom: 10px;
 }
 
 .socialSites3 {
     height: 30px;
+    margin-bottom: 10px;
 }
 
 .socialSites4 {
     height: 30px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-li {
+.footer li {
     list-style: none;
 }
 
-.company {
+.footer .company {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 34px;
-    color: #FFFFFF;
-    margin-left: 100px;
 }
 
-.about {
+.footer .about {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 24px;
-    color: #FFFFFF;
 }

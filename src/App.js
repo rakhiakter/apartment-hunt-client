@@ -8,6 +8,7 @@ import MyRent from './Components/MyRent/MyRent';
 import RentHouse from './Components/RentHouse/RentHouse';
 import ApartmentDetails from './Components/ApartmentDetails/ApartmentDetails';
 import CreateAccount from './Components/CreateAccount/CreateAccount';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -18,9 +19,15 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/apartmentDetails" component={ApartmentDetails} />
-          <Route path="/bookingList" component={BookingList} />
-          <Route path="/myRent" component={MyRent} />
-          <Route path="/rentHouse" component={RentHouse} />
+          <PrivateRoute path="/bookingList">
+            <BookingList></BookingList>
+          </PrivateRoute>
+          <PrivateRoute path="/myRent">
+            <MyRent></MyRent>
+          </PrivateRoute>
+          <PrivateRoute path="/addHouse">
+            <RentHouse></RentHouse>
+          </PrivateRoute>
           <Route path="/createAccount" component={CreateAccount} />
         </Switch>
       </Router>

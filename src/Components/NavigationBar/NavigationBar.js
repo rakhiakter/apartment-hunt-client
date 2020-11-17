@@ -1,47 +1,48 @@
 import React from 'react';
-import {  Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import './NavigationBar.css';
 const NavigationBar = () => {
-    return (
-      <div>
-        <Container>
-          <Navbar>
-            <Navbar.Brand href="#home">
-              <Link to="/">
-                <img
-                  style={{ width: "150px", height: "70px" }}
-                  src={require("../../logos/logo.png").default}
-                  alt=""
-                />
-              </Link>
-            </Navbar.Brand>
-            <Nav className="ml-auto ">
-              <Nav.Link className="navColor" href="#home">
-                Home
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#features">
-                About
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
-                Service
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
-                Concerns
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
-                Event
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
-                Contact
-              </Nav.Link>
-            </Nav>
+  const history = useHistory();
+  return (
+    <div className="nav-section">
+      <Container className="pt-3">
+        <Navbar>
+          <Navbar.Brand href="#home">
+            <Link to="/">
+              <img
+                style={{ height: 54.8 }}
+                src={require("../../logos/logo.png").default}
+                alt=""
+              />
+            </Link>
+          </Navbar.Brand>
+          <Nav className="ml-auto">
+            <NavLink className="nav-link" activeClassName="active-link" to="/">
+              Home
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active-link" to="#features">
+              About
+              </NavLink>
+            <NavLink className="nav-link" activeClassName="active-link" to="#pricing">
+              Service
+              </NavLink>
+            <NavLink className="nav-link" activeClassName="active-link" to="#concerns">
+              Concerns
+              </NavLink>
+            <NavLink className="nav-link" activeClassName="active-link" to="#event">
+              Event
+              </NavLink>
+            <NavLink className="nav-link" activeClassName="active-link" to="#contact">
+              Contact
+              </NavLink>
+          </Nav>
 
-            <button className="loginBtn">Login</button>
-          </Navbar>
-        </Container>
-      </div>
-    );
+          <button className="loginBtn" onClick={() => history.push('/login')}>Login</button >
+        </Navbar>
+      </Container>
+    </div>
+  );
 };
 
 export default NavigationBar;
