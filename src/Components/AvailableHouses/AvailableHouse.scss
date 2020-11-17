@@ -1,0 +1,74 @@
+@import "../../App.scss";
+
+.available1 {
+    text-align: $text-position;
+    margin-top: 30px;
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-one;
+}
+
+.available2 {
+    text-align: $text-position;
+    margin-top: 10px;
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: bold;
+    font-size: 34px;
+    color: $color-three;
+}
+
+.house {
+    margin-top: 30px;
+}
+
+.cardImg {
+    margin-top: 50px;
+}
+
+.map {
+    width: 24px;
+    height: 24px;
+}
+
+.view {
+    width: 140px;
+    height: 50px;
+    background: $color-one;
+    border: none;
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-four;
+    border-radius: 3px;
+}
+
+.amount {
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: bold;
+    font-size: 40px;
+    color: $color-one;
+}
+
+.avenue {
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: bold;
+    font-size: 50px;
+    color: $color-three;
+    width: 211px;
+    height: 36px;
+}
+
+.address {
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: $style-of-font;
+    font-size: 16px;
+    color:$color-five;
+}

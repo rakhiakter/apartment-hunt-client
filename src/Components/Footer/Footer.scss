@@ -1,8 +1,14 @@
+@import "../../App.scss";
 .footer {
     margin-top: 60px;
+<<<<<<< HEAD:src/Components/Footer/Footer.css
     background-color: #275A53;
     min-height: 350px;
     color: white
+=======
+    background-color: $color-one;
+    height: 300px;
+>>>>>>> main:src/Components/Footer/Footer.scss
 }
 
 .footerCol {
@@ -33,12 +39,19 @@
     list-style: none;
 }
 
+<<<<<<< HEAD:src/Components/Footer/Footer.css
 .footer .company {
     font-family: Poppins;
     font-style: normal;
+=======
+.company {
+    font-family: $font-family;
+    font-style: $style-of-font;
+>>>>>>> main:src/Components/Footer/Footer.scss
     font-weight: 600;
     font-size: 21px;
     line-height: 34px;
+<<<<<<< HEAD:src/Components/Footer/Footer.css
 }
 
 .footer .about {
@@ -47,4 +60,21 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+=======
+    color:$color-two;
+    margin-left: 100px;
+}
+
+.about {
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:$color-two;
+}
+
+ul.about {
+    color:$color-two;
+>>>>>>> main:src/Components/Footer/Footer.scss
 }

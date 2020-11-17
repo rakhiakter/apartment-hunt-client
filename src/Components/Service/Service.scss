@@ -1,22 +1,23 @@
+@import "../../App.scss";
 .service1 {
-    text-align: center;
+    text-align: $text-position;
     margin-top: 50px;
-    font-family: Poppins;
-    font-style: normal;
+    font-family: $font-family;
+    font-style: $style-of-font;
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 0.0015em;
-    color: #275A53;
+    color: $color-one;
 }
 
 .service2 {
-    text-align: center;
+    text-align: $text-position;
     margin-top: 20px;
-    font-family: Poppins;
-    font-style: normal;
+    font-family: $font-family;
+    font-style: $style-of-font;
     font-weight: bold;
     font-size: 34px;
-    color: #16322E;
+    color: $color-three;
 }
 
 .img1 {
@@ -46,19 +47,19 @@
 
 .serviceHeader {
     margin-top: 30px;
-    font-family: Poppins;
-    font-style: normal;
+    font-family: $font-family;
+    font-style: $style-of-font;
     font-weight: 700;
     font-size: 20px;
-    color: #16322E;
-    text-align: center;
+    color: $color-three;
+    text-align: $text-position;
 }
 
-.service-section .about {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
+.about {
+    font-family: $font-family;
+    font-style: $style-of-font;
+    font-weight: $style-of-font;
     font-size: 16px;
-    text-align: center;
-    color: #606268;
+    text-align: $text-position;
+    color: $color-seven;
 }

@@ -1,48 +1,49 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink, useHistory } from 'react-router-dom';
-import './NavigationBar.css';
+import {  Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './NavigationBar.scss';
 const NavigationBar = () => {
-  const history = useHistory();
-  return (
-    <div className="nav-section">
-      <Container className="pt-3">
-        <Navbar>
-          <Navbar.Brand href="#home">
-            <Link to="/">
-              <img
-                style={{ height: 54.8 }}
-                src={require("../../logos/logo.png").default}
-                alt=""
-              />
-            </Link>
-          </Navbar.Brand>
-          <Nav className="ml-auto">
-            <NavLink className="nav-link" activeClassName="active-link" to="/">
-              Home
-            </NavLink>
-            <NavLink className="nav-link" activeClassName="active-link" to="#features">
-              About
-              </NavLink>
-            <NavLink className="nav-link" activeClassName="active-link" to="#pricing">
-              Service
-              </NavLink>
-            <NavLink className="nav-link" activeClassName="active-link" to="#concerns">
-              Concerns
-              </NavLink>
-            <NavLink className="nav-link" activeClassName="active-link" to="#event">
-              Event
-              </NavLink>
-            <NavLink className="nav-link" activeClassName="active-link" to="#contact">
-              Contact
-              </NavLink>
-          </Nav>
+    return (
+      <div>
+        <Container>
+          <Navbar>
+            <Navbar.Brand href="#home">
+              <Link to="/">
+                <img
+                  style={{ width: "150px", height: "70px" }}
+                  src={require("../../logos/logo.png").default}
+                  alt=""
+                />
+              </Link>
+            </Navbar.Brand>
+            <Nav className="ml-auto ">
+              <Link to="/" className="navColor1">
+                Home
+              </Link>
+              <Link to="/apartmentDetails" className="navColor2">
+                About
+              </Link>
+              <Link to="/myRent" className="navColor3">
+                Service
+              </Link>
+              <Link className="navColor4" href="#pricing">
+                Concerns
+              </Link>
+              <Link className="navColor5" href="#pricing">
+                Event
+              </Link>
+              <Link className="navColor6" href="#pricing">
+                Contact
+              </Link>
+            </Nav>
 
-          <button className="loginBtn" onClick={() => history.push('/login')}>Login</button >
-        </Navbar>
-      </Container>
-    </div>
-  );
+            <Link to="/login">
+              <button className="loginBtn">Login</button>
+            </Link>
+          </Navbar>
+        </Container>
+      </div>
+    );
 };
 
 export default NavigationBar;

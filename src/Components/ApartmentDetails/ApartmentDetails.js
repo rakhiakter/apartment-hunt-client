@@ -1,5 +1,6 @@
 import React from 'react';
-import './ApartmentDetails.css';
+import './ApartmentDetails.scss';
+import heroImg from '../../images/hero/product_details_hero.png';
 import featuredImg from '../../images/rectangle 406.png';
 import thumbnailImgOne from '../../images/rectangle 407.png';
 import thumbnailImgTwo from '../../images/rectangle 408.png';

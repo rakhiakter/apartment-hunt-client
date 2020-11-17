@@ -1,8 +1,9 @@
+@import "../../App.scss";
 .find {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-style: normal;
+    text-align: $text-position;
+    color:$color-two;
+    font-family: $font-family2;
+    font-style: $style-of-font;
     font-weight: bold;
     font-size: 48px;
     padding-top: 50px;
@@ -18,22 +19,22 @@
 
 .searchBtn {
     width: 150px;
-    height: 50px;
-    margin-left: 10px;
-    background: #275A53;
+    height: 40px;
+    background: $color-one;
     border-radius: 5px;
-    font-family: Avenir;
-    font-style: normal;
+    font-family: $font-family3;
+    font-style: $style-of-font;
     font-weight: 500;
     font-size: 16px;
     border: none;
-    text-align: center;
-    color: #FFFFFF;
+    text-align: $text-position;
+    color: $color-two;
 }
 
-.searchIn .form-control {
-    height: 50px;
-    background: #F1F6F4;
+.search2 {
+    width: 150px;
+    height: 70px;
+    background: $color-four;
     border-radius: 5px;
 }
 

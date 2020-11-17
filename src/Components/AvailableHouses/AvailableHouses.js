@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap';
-import './AvailableHouse.css';
+import { Link } from 'react-router-dom';
+import './AvailableHouse.scss';
 const AvailableHouses = () => {
   return (
     <Container>
@@ -53,6 +54,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -75,6 +77,33 @@ const AvailableHouses = () => {
             <Card.Body>
               <Card.Title className="avenue">
                 Family Apartment Three
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$194</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={require("../../images/rectangle 396.png").default}
+                alt=""
+              />
+              <Card.Body>
+                <Card.Title className="avenue">
+                  Family Apartment Three
+>>>>>>> main
                 </Card.Title>
               <Card.Text>
                 <p className="address">
@@ -111,6 +140,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -143,6 +173,42 @@ const AvailableHouses = () => {
                     }
                     alt=""
                   />{" "}
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$356</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={require("../../images/rectangle 398.png").default}
+                alt=""
+              />
+              <Card.Body>
+                <Card.Title className="avenue">Gorgeous house</Card.Title>
+                <Card.Text>
+                  <p className="address">
+                    {" "}
+                    <img
+                      className="map"
+                      src={
+                        require("../../logos/map-marker-alt-solid 1.png")
+                          .default
+                      }
+                      alt=""
+                    />{" "}
+>>>>>>> main
                     Nasirabad H/S, Chattogram
                   </p>
                 <Row>
@@ -167,6 +233,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -203,6 +270,46 @@ const AvailableHouses = () => {
                     }
                     alt=""
                   />{" "}
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$256</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardDeck>
+        </Row>
+        <Row className="house">
+          <CardDeck>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={require("../../images/rectangle 405.png").default}
+                alt=""
+              />
+              <Card.Body>
+                <Card.Title className="avenue">Luxury villa</Card.Title>
+                <Card.Text>
+                  <p className="address">
+                    {" "}
+                    <img
+                      className="map"
+                      src={
+                        require("../../logos/map-marker-alt-solid 1.png")
+                          .default
+                      }
+                      alt=""
+                    />{" "}
+>>>>>>> main
                     Nasirabad H/S, Chattogram
                   </p>
                 <Row>
@@ -227,6 +334,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -259,6 +367,42 @@ const AvailableHouses = () => {
                     }
                     alt=""
                   />{" "}
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$345</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={require("../../images/rectangle 403.png").default}
+                alt=""
+              />
+              <Card.Body>
+                <Card.Title className="avenue">Epic Huda Palacio</Card.Title>
+                <Card.Text>
+                  <p className="address">
+                    {" "}
+                    <img
+                      className="map"
+                      src={
+                        require("../../logos/map-marker-alt-solid 1.png")
+                          .default
+                      }
+                      alt=""
+                    />{" "}
+>>>>>>> main
                     Nasirabad H/S, Chattogram
                   </p>
                 <Row>
@@ -283,6 +427,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -315,6 +460,42 @@ const AvailableHouses = () => {
                     }
                     alt=""
                   />{" "}
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$536</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={require("../../images/rectangle 404.png").default}
+                alt=""
+              />
+              <Card.Body>
+                <Card.Title className="avenue">Washington Avenue</Card.Title>
+                <Card.Text>
+                  <p className="address">
+                    {" "}
+                    <img
+                      className="map"
+                      src={
+                        require("../../logos/map-marker-alt-solid 1.png")
+                          .default
+                      }
+                      alt=""
+                    />{" "}
+>>>>>>> main
                     Nasirabad H/S, Chattogram
                   </p>
                 <Row>
@@ -339,6 +520,7 @@ const AvailableHouses = () => {
                       />{" "}
                         2 Bathrooms
                       </p>
+<<<<<<< HEAD
                   </Col>
                 </Row>
                 <Row>
@@ -356,6 +538,27 @@ const AvailableHouses = () => {
       </Row>
     </Container>
   );
+=======
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <h3 className="amount">$283</h3>
+                    </Col>
+                    <Col sm={6}>
+                      <Link to="/apartmentDetails">
+                        <button className="view">View Details</button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardDeck>
+        </Row>
+      </Container>
+    );
+>>>>>>> main
 };
 
 export default AvailableHouses;
