@@ -17,27 +17,30 @@ const NavigationBar = () => {
               </Link>
             </Navbar.Brand>
             <Nav className="ml-auto ">
-              <Nav.Link className="navColor" href="#home">
+              <Link to="/" className="navColor1">
                 Home
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#features">
+              </Link>
+              <Link to="/apartmentDetails" className="navColor2">
                 About
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
+              </Link>
+              <Link to="/myRent" className="navColor3">
                 Service
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
+              </Link>
+              <Link className="navColor4" href="#pricing">
                 Concerns
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
+              </Link>
+              <Link className="navColor5" href="#pricing">
                 Event
-              </Nav.Link>
-              <Nav.Link className="navColor" href="#pricing">
+              </Link>
+              <Link className="navColor6" href="#pricing">
                 Contact
-              </Nav.Link>
+              </Link>
             </Nav>
 
-            <button className="loginBtn">Login</button>
+            <Link to="/login">
+              {" "}
+              <button className="loginBtn">Login</button>
+            </Link>
           </Navbar>
         </Container>
       </div>

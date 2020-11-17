@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './AvailableHouse.css';
 const AvailableHouses = () => {
     return (
@@ -60,7 +61,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$194</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -118,7 +122,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$356</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -174,7 +181,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$256</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -234,7 +244,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$345</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -290,7 +303,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$536</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -346,7 +362,10 @@ const AvailableHouses = () => {
                       <h3 className="amount">$283</h3>
                     </Col>
                     <Col sm={6}>
-                      <button className="view">View Details</button>
+                      <Link to="/apartmentDetails">
+                        {" "}
+                        <button className="view">View Details</button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Text>

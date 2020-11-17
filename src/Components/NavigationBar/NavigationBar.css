@@ -11,10 +11,56 @@
     color: #FFFFFF;
 }
 
-.navColor {
+.navColor1 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     color: #000000;
+    margin-right: 10px;
+}
+
+.navColor2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.navColor3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.navColor4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.navColor5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.navColor6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
 }
